@@ -60,6 +60,7 @@ public class ItemServiceFallback implements FallbackProvider {
             	String s = JsonResult.err().msg("后台服务错误").toString();
                 return new ByteArrayInputStream(s.getBytes("UTF-8"));
             }
+            
 
             @Override
             public HttpHeaders getHeaders() {
